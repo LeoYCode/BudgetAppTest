@@ -15,6 +15,7 @@ Feature: Budget management application
     When I click reports tab
     Then I should be on reports page
 
+  @failed
   Scenario: Change Description name
     When I change description to "Local supermarket milk"
     Then I should see description updated to "Local supermarket milks"

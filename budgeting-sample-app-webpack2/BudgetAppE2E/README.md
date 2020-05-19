@@ -6,11 +6,12 @@ This is an example project demonstrating, the use of Ruby, Cucumber, Capybara, S
 The purpose of this repo is to demonstrate how Capybara and SitePrism using page object model, can provide an end to end solution for testing the application.
 Test plan can be found in BudgetApp Directory called *Budgeting App Test Plan.pdf*
 
-You will not need to worry about the relevant drivers, as this will be automatically downloaded
+Relevant drivers such as chrome driver, will be automatically be downloaded in root of app
 
 
 <h2>Usage</h2>
-User will need to run:<br/>
+User will first need to run:<br/>
+
 ```
 bundle install
 ```
@@ -27,6 +28,12 @@ To run on Chrome/Firefox/Iphone/Headless browser, replace iphone value below wit
 cucumber BROWSER=iphone
 ```
 
+To run failed scenario:<br/>
+
+```
+cucumber -p failed 
+```
+
 To run @mobile tagged tests:<br/>
 ```
 cucumber -p mobile BROWSER=iphone
@@ -40,6 +47,12 @@ features/reports
 Cucumber HTML report can be opened in any browser, failed test screenshots are located:</br>
 ```
 features/reports/screenshots
+```
+
+You can pass environment variable to all cucumber commands indicating what browser to run tests:<br/>
+
+```
+BROWSER=
 ```
 
 <h2>Tested</h2>

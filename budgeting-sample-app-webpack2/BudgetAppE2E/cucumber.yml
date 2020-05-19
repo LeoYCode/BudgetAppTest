@@ -3,6 +3,5 @@ std_opts = "--format progress -f html --out=features/reports/cucumber_report.htm
 %>
 
 default: <%= std_opts %>
-
-#Mobile
 mobile: <%= std_opts %> --tags "@mobile"
+failed: <%= std_opts %> --tags "@failed"
