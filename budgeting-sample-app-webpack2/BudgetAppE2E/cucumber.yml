@@ -1,0 +1,8 @@
+<%
+std_opts = "--format progress -f html --out=features/reports/cucumber_report.html"
+%>
+
+default: <%= std_opts %>
+
+#Mobile
+mobile: <%= std_opts %> --tags "@mobile"
